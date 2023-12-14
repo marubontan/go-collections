@@ -1,4 +1,4 @@
-package defaultdict
+package collections
 
 type DefaultDict[K comparable, V any] struct {
 	data map[K]V

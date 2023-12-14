@@ -1,4 +1,4 @@
-module go-collections
+module github.com/marubontan/go-collections
 
 go 1.21.4
 

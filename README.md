@@ -1,4 +1,4 @@
-# go-collections
+# go-collections [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Overview
 This is util library for Go.  
 The idea is from Python's collections library.  

@@ -1,19 +1,19 @@
 package collections
 
 type DefaultDict[K comparable, V any] struct {
-	data map[K]V
+	Data map[K]V
 }
 
 func NewDefaultDict[K comparable, V any]() DefaultDict[K, V] {
-	return DefaultDict[K, V]{data: make(map[K]V)}
+	return DefaultDict[K, V]{Data: make(map[K]V)}
 }
 
 func (d *DefaultDict[K, V]) Set(k K, v V) {
-	d.data[k] = v
+	d.Data[k] = v
 }
 
 func (d *DefaultDict[K, V]) Get(k K) V {
-	if v, ok := d.data[k]; ok {
+	if v, ok := d.Data[k]; ok {
 		return v
 	} else {
 		var zeroValue V

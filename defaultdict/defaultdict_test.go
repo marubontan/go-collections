@@ -1,4 +1,4 @@
-package defaultdict
+package collections
 
 import (
 	"testing"

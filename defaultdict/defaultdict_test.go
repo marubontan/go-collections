@@ -25,7 +25,7 @@ func TestStrSliceDefaultDict(t *testing.T) {
 	defaultDict.Set("1", []int{1})
 	assert.Equal(t, []int{1}, defaultDict.Get("1"))
 	assert.Equal(t, []int(nil), defaultDict.Get("0"))
-	defaultDict.data["1"] = append(defaultDict.Get("1"), 2)
+	defaultDict.Data["1"] = append(defaultDict.Get("1"), 2)
 	assert.Equal(t, []int{1, 2}, defaultDict.Get("1"))
 }
 
